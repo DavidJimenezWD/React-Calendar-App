@@ -1,0 +1,76 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.calendar-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Modal */
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 500px;
+  outline: none;
+  padding: 10px;
+}
+
+/*FABS*/
+
+.fab {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 100%;
+  bottom: 25px;
+  font-size: 20px;
+  padding-top: 17px;
+  position: fixed;
+  right: 25px;
+  width: 52px;
+  height: 52px;
+}
+
+.fab-danger {
+  position: fixed;
+  width: 150px;
+  height: 52px;
+  bottom: 20px;
+  z-index: 100;
+}
